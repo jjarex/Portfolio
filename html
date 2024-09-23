@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jain Lee Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Jain Lee's Portfolio</h1>
+        <p>Multimedia Producer | AR Developer | Creative Director</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>AR Fairy Tale Book</h3>
+            <p>An interactive fairy tale book where users solve puzzles and explore the story using AR.</p>
+            <img src="ar_fairytale_book.jpg" alt="AR Fairy Tale Book">
+        </div>
+
+        <div class="project">
+            <h3>Exciting Card Game</h3>
+            <p>An AR-powered card game for children, allowing them to interact with the story through QR codes.</p>
+            <img src="exciting_card_game.jpg" alt="Exciting Card Game">
+        </div>
+
+        <!-- Add more projects here -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Jain Lee</h2>
+        <p>Jain Lee is a creative director and multimedia producer with expertise in AR, UI/UX design, and storytelling.</p>
+        <p>With a background in interactive media, Jain has worked on numerous projects combining technology and storytelling to create immersive experiences.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: jjarex0120@gmail.com</p>
+        <p>Phone: +82 10 7161 2412</p>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Jain Lee Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+CSS Styling Example
+css
+코드 복사
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero_image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.hero p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.hero .btn {
+    background-color: #f06c64;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+}
+
+.contact button {
+    background-color: #f06c64;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
